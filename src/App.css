@@ -1,0 +1,80 @@
+/* Reset layout to use full width and height */
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden; /* prevent sideways scroll */
+  font-family: 'Inter', sans-serif;
+}
+
+/* General section styling */
+section {
+  min-height: 100vh;       /* each section fills the screen height */
+  width: 100vw;            /* full screen width */
+  display: flex;           /* center content */
+  flex-direction: column;  
+  align-items: center;     /* horizontally center */
+  justify-content: center; /* vertically center */
+  box-sizing: border-box;
+  padding: 4rem 2rem;
+  color: white;
+  text-align: center;
+}
+
+/* Optional: give each section different background transparency */
+section:nth-of-type(1) {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+section:nth-of-type(2) {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+section:nth-of-type(3) {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* Add spacing between sections when scrolled */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10rem; /* 👈 increase or decrease for section gaps */
+  position: relative;
+  z-index: 1;
+}
+
+/* Optional: make the button and headings look clean */
+button {
+  background: #ffffff;
+  color: #000000;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+}
+
+h1, h2 {
+  margin-bottom: 1rem;
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 1.2s ease-out forwards;
+}
