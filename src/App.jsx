@@ -12,41 +12,6 @@ function App() {
   return (
     <>
       {/* Fixed PillNav on top */}
-      
-      <div
-  style={{
-    position: 'fixed',
-    top: 0,
-    left: 0,
-    width: '100%',
-    display: 'flex',
-    justifyContent: 'center', // centers items inside horizontally
-    alignItems: 'center',
-    zIndex: 100,
-    padding: '1rem 0',
-  }}
->
-  <PillNav
-          logo={logo}
-          logoAlt="IEDC AJCE Logo"
-          items={[
-            { label: 'Home', href: '#home' },
-            { label: 'About', href: '#about' },
-            { label: 'Events', href: '#events' },
-            { label: 'Team', href: '#team' },
-            { label: 'Contact', href: '#contact' },
-          ]}
-         activeHref="/"
-  className="custom-nav"
-  ease="power2.easeOut"
-  baseColor="#000000"
-  pillColor="#ffffff"
-  hoveredPillTextColor="#ffffff"
-  pillTextColor="#000000"
-        />
- 
-      </div>
-
 
       {/* Full-screen Ballpit background */}
       <div
@@ -78,8 +43,44 @@ function App() {
     zIndex: 1,
     marginTop: '100px',
     
+    
   }}
 >
+ <div
+  style={{
+    position: 'fixed',
+    top: 0,
+    left: 0,
+    width: '100%',
+    display: 'flex',
+    justifyContent: 'center', // centers items inside horizontally
+    alignItems: 'center',
+    zIndex: 100,
+    padding: '1rem 0',
+
+  }}
+>
+  <PillNav
+          logo={logo}
+          logoAlt="IEDC AJCE Logo"
+          items={[
+            { label: 'Home', href: '#home' },
+            { label: 'About', href: '#about' },
+            { label: 'Events', href: '#events' },
+            { label: 'Team', href: '#team' },
+            { label: 'Contact', href: '#contact' },
+          ]}
+         activeHref="/"
+  className="custom-nav"
+  ease="power2.easeOut"
+  baseColor="#000000"
+  pillColor="#ffffff"
+  hoveredPillTextColor="#ffffff"
+  pillTextColor="#000000"
+        />
+ 
+      </div>
+
   {/* HOME */}
   <section
     id="home"
@@ -92,8 +93,9 @@ function App() {
       justifyContent: 'center',
       textAlign: 'center',
       padding: '6rem 2rem',
+       background: 'linear-gradient(180deg, rgba(0,0,0,0.4), rgba(0,0,0,0.6), rgba(0,0,0,0.9))',
       position: 'relative',
-      background: 'linear-gradient(180deg, rgba(0,0,0,0.3), rgba(0,0,0,0.8))',
+     
     }}
   >
     <div
