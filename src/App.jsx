@@ -23,9 +23,6 @@ function App() {
     justifyContent: 'center', // centers items inside horizontally
     alignItems: 'center',
     zIndex: 100,
-    backdropFilter: 'blur(10px)',
-    backgroundColor: 'rgba(0, 0, 0, 0)',
-    boxShadow: '0 4px 20px rgba(0, 0, 0, 0.2)',
     padding: '1rem 0',
   }}
 >
@@ -73,14 +70,14 @@ function App() {
         />
       </div>
 
-      {/* Main scrollable content */}
-     
+      {/* Main scrollable content */} 
 <div
   className="main-content"
   style={{
     position: 'relative',
     zIndex: 1,
     marginTop: '100px',
+    
   }}
 >
   {/* HOME */}
@@ -155,7 +152,7 @@ function App() {
       alignItems: 'center',
       justifyContent: 'center',
       padding: '6rem 2rem',
-      background: 'rgba(0,0,0,0.5)',
+      background: 'rgba(0,0,0,0)',
       color: 'white',
     }}
   >
@@ -188,7 +185,7 @@ function App() {
       alignItems: 'center',
       justifyContent: 'center',
       padding: '6rem 2rem',
-      background: 'rgba(0,0,0,0.4)',
+      background: 'rgba(0,0,0,0)',
       color: 'white',
     }}
   >
@@ -212,7 +209,7 @@ function App() {
       alignItems: 'center',
       justifyContent: 'center',
       padding: '6rem 2rem',
-      background: 'rgba(0,0,0,0.5)',
+      background: 'rgba(0,0,0,0)',
       color: 'white',
       textAlign: 'center',
     }}
@@ -236,7 +233,7 @@ function App() {
       alignItems: 'center',
       justifyContent: 'center',
       padding: '6rem 2rem',
-      background: 'rgba(0,0,0,0.6)',
+      background: 'rgba(0,0,0,0)',
       color: 'white',
     }}
   >
